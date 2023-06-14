@@ -1,0 +1,75 @@
+@font-face {
+    src: url('/public/assets/fonts/Roboto-Regular.ttf');
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('/public/assets/fonts/Roboto-Bold.ttf');
+    font-family: 'Roboto-Bold';
+    font-style: normal;
+    font-weight: 700;
+}
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--charcoal-grey);
+    color: var(--dark-slate-grey);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+    position: relative;
+}
+
+footer {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--tomato);
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: var(--grey);
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+}

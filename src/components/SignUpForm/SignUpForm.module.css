@@ -1,0 +1,44 @@
+.SignUpForm {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+}
+
+.SignUpForm label {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 1.2rem;
+}
+
+.ErrorMsg {
+    color: var(--tomato);
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.SignUpForm input[type="email"] {
+    border: 1px solid var(--grey);
+    border-radius: .8rem;
+    color: var(--charcoal-grey);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    padding: 1.8rem 2rem;
+}
+
+.SignUpForm input[type="email"]::placeholder {
+    color: var(--charcoal-grey);
+}
+
+.SignUpForm input[type="email"]:focus {
+    outline: 1px solid var(--grey);
+}
+
+.InputError {
+    background-color: hsla(4, 100%, 67%, .2);
+    border: 1px solid var(--tomato);
+}

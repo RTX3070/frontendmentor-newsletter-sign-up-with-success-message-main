@@ -1,0 +1,55 @@
+.SignUp {
+    background-color: var(--white);
+    border-radius: 0 0 2.5rem 2.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
+    position: relative;
+    width: 37.5rem;
+}
+
+.LeftCol {
+    order: 2;
+    padding: 3rem 2.5rem;
+}
+
+.LeftCol h1 {
+    font-family: 'Roboto-Bold', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.LeftCol p {
+    margin-bottom: 2rem;
+}
+
+.RightCol img {
+    border-radius: 0 0 2.5rem 2.5rem;
+    order: 1;
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .SignUp {
+        border-radius: 2.5rem;
+        flex-flow: row nowrap;
+        gap: 2rem;
+        height: 60rem;
+        padding: 2rem;
+        width: 80rem;
+    }
+
+    .LeftCol {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        order: 1;
+        padding: 0;
+        width: 50%;
+    }
+
+    .RightCol {
+        order: 2;
+        width: 50%;
+    }
+}

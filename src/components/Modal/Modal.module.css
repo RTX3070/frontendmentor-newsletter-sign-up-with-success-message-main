@@ -1,0 +1,48 @@
+.Modal {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.ModalContent {
+    background-color: var(--white);
+    padding: 2.5rem;
+}
+
+.ModalContent img {
+    margin-bottom: 2.5rem;
+}
+
+.ModalContent h1 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 4.8rem;
+    line-height: 1;
+}
+
+.ModalContent p {
+    margin: 2.5rem 0;
+}
+
+.ModalContent p span {
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+@media only screen and (min-width: 800px) {
+    .Modal {
+        background-color: var(--charcoal-grey);
+        flex-flow: row nowrap;
+    }
+
+    .ModalContent {
+        border-radius: 2.5rem;
+        padding: 5rem;
+        width: 45rem;
+    }
+}
